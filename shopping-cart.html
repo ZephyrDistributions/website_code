@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Shopping Cart</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<link rel="stylesheet" href="shopping-cart.css">
+
+</head>
+<body style="background-color:black;">
+	<main class="page">
+	 	<section class="shopping-cart dark" style="background-color:black;">
+	 		<div class="container">
+		        <div class="block-heading">
+		          <h2>Shopping Cart</h2>
+		        </div>
+		        <div class="content">
+	 				<div class="row">
+	 					<div class="col-md-12 col-lg-8">
+	 						<div class="items">
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="red-case.png" width="550" height="500" style=padding-left:3px;>
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#">Air Jordan 1: AirPod Case [Red]</a>
+								 							<div class="product-info">
+
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="quantity">Quantity:</label>
+							 							<input id="quantity" type="number" value ="0" min="0" class="form-control quantity-input">
+							 						</div>
+							 						<div class="col-md-3 price">
+							 							<span id="price1">$8.99</span>
+                                                        <button id="first" type="button" class="btn btn-primary btn-sm btn-block" onclick="submitForm1()">Submit</button>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="gray-case.jpg" width="550" height="500" style=padding-left:3px;>
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#">Air Jordan 1: AirPod Case [Gray]</a>
+								 							<div class="product-info">
+
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="amount">Quantity:</label>
+							 							<input id="amount" type="number" value ="0" min="0" class="form-control quantity-input">
+							 						</div>
+							 						<div class="col-md-3 price">
+							 							<span>$8.99</span>
+                                                        <button id="second" type="button" class="btn btn-primary btn-sm btn-block" onclick="submitForm2()">Submit</button>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+				 				<div class="product">
+				 					<div class="row">
+					 					<div class="col-md-3">
+					 						<img class="img-fluid mx-auto d-block image" src="bape_red.jpg" width="550" height="500" style=padding-left:3px;>
+					 					</div>
+					 					<div class="col-md-8">
+					 						<div class="info">
+						 						<div class="row">
+							 						<div class="col-md-5 product-name">
+							 							<div class="product-name">
+								 							<a href="#">IPhone X: Red Camo Bape Case</a>
+								 							<div class="product-info">
+
+									 						</div>
+									 					</div>
+							 						</div>
+							 						<div class="col-md-4 quantity">
+							 							<label for="quantity">Quantity:</label>
+                                                        <p style="color:red;">Out of Stock</p>
+							 						</div>
+							 						<div class="col-md-3 price">
+							 							<span>$10.99</span>
+							 						</div>
+							 					</div>
+							 				</div>
+					 					</div>
+					 				</div>
+				 				</div>
+                                <div class="product">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="img-fluid mx-auto d-block image" src="bape_gray.jpg" width="550" height="500" style=padding-left:3px;>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="col-md-5 product-name">
+                                                        <div class="product-name">
+                                                            <a href="#">IPhone X: Gray Camo Bape Case</a>
+                                                            <div class="product-info">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 quantity">
+                                                        <label for="quantity">Quantity:</label>
+                                                        <p style="color:red;">Out of Stock</p>
+                                                    </div>
+                                                    <div class="col-md-3 price">
+                                                        <span>$10.99</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="img-fluid mx-auto d-block image" src="offwhite.png" width="550" height="500" style=padding-left:3px;>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="col-md-5 product-name">
+                                                        <div class="product-name">
+                                                            <a href="#">AirPod Pro Case: Off-White Edition</a>
+                                                            <div class="product-info">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 quantity">
+                                                        <label for="num">Quantity:</label>
+                                                        <input id="num" type="number" value ="0" min="0" class="form-control quantity-input">
+                                                    </div>
+                                                    <div class="col-md-3 price">
+                                                        <span>$7.99</span>
+                                                        <button id="third" type="button" class="btn btn-primary btn-sm btn-block" onclick="submitForm3()">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="img-fluid mx-auto d-block image" src="champion.png" width="550" height="500" style=padding-left:3px;>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="col-md-5 product-name">
+                                                        <div class="product-name">
+                                                            <a href="#">AirPod Pro Case: Champion Edition</a>
+                                                            <div class="product-info">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 quantity">
+                                                        <label for="num2">Quantity:</label>
+                                                        <input id="num2" type="number" value ="0" min="0" class="form-control quantity-input">
+                                                    </div>
+                                                    <div class="col-md-3 price">
+                                                        <span>$7.99</span>
+                                                        <button id="fourth" type="button" class="btn btn-primary btn-sm btn-block" onclick="submitForm4()">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="img-fluid mx-auto d-block image" src="supreme.jpg" width="550" height="500" style=padding-left:3px;>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="col-md-5 product-name">
+                                                        <div class="product-name">
+                                                            <a href="#">AirPod Pro Case: Supreme Edition</a>
+                                                            <div class="product-info">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 quantity">
+                                                        <label for="num3">Quantity:</label>
+                                                        <input id="num3" type="number" value ="0" min="0" class="form-control quantity-input">
+                                                    </div>
+                                                    <div class="col-md-3 price">
+                                                        <span>$7.99</span>
+                                                        <button id="fifth" type="button" class="btn btn-primary btn-sm btn-block" onclick="submitForm5()">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="product">
+                                    <div class="row">
+                                        <div class="col-md-3">
+                                            <img class="img-fluid mx-auto d-block image" src="nasa.jpg" width="550" height="500" style=padding-left:3px;>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="info">
+                                                <div class="row">
+                                                    <div class="col-md-5 product-name">
+                                                        <div class="product-name">
+                                                            <a href="#">AirPod Pro Case: NASA Edition</a>
+                                                            <div class="product-info">
+
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-4 quantity">
+                                                        <label for="num4">Quantity:</label>
+                                                        <input id="num4" type="number" value ="0" min="0" class="form-control quantity-input">
+                                                    </div>
+                                                    <div class="col-md-3 price">
+                                                        <span>$7.99</span>
+                                                        <button id="sixth" type="button" class="btn btn-primary btn-sm btn-block" onclick="submitForm6()">Submit</button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+				 			</div>
+			 			</div>
+			 			<div class="col-md-12 col-lg-4">
+			 				<div class="summary">
+                                <h3>Order</h3>
+                                <div class="item">
+                                    <p class="item-name" id="cost1"></p>
+                                    <p id="d1" class="item-description"></p>
+                                </div>
+                                <br>
+                                <div class="item">
+                                    <p class="item-name" id="cost2"></p>
+                                    <p id="d2" class="item-description"></p>
+                                </div>
+                                <br>
+                                <div class="item">
+                                    <p class="item-name" id="cost3"></p>
+                                    <p id="d3" class="item-description"></p>
+                                </div>
+                                <br>
+                                <div class="item">
+                                    <p class="item-name" id="cost4"></p>
+                                    <p id="d4" class="item-description"></p>
+                                </div>
+                                <br>
+                                <div class="item">
+                                    <p class="item-name" id="cost5"></p>
+                                    <p id="d5" class="item-description"></p>
+                                </div>
+                                <br>
+                                <div class="item">
+                                    <p class="item-name" id="cost6"></p>
+                                    <p id="d6" class="item-description"></p>
+                                </div>
+                                <br>
+                                <h3>Summary</h3>
+                                <div class="summary-item"><span class="text">Subtotal</span><span class="price" id="sub">$0.00</span></div>
+                                <div class="summary-item"><span class="text">Tax</span><span class="price" id="tax">$0.00</span></div>
+                                <div class="summary-item"><span class="text">Shipping</span><span class="price" id="ship">$8.25</span></div>
+                                <div class="summary-item"><span class="text">Total</span><span class="price" id="total">$8.25</span></div>
+                                <br>
+                                <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+                                    <!-- Identify your business so that you can collect the payments. -->
+                                    <input type="hidden" name="business" value="zephyr.distributions@paypal.com"> <!-- Add your PayPal Seller/Business email address Required-->
+                                    <!-- Specify a Buy Now button. -->
+                                    <input type="hidden" name="cmd" value="_xclick">
+                                    <!-- Specify details about the item that buyers will purchase. -->
+                                    <input type="hidden" name="item_name" id="order_form" value=""> <!-- Add Description e.g your room type Required-->
+                                    <input type="hidden" name="amount" id="end_total" value=""> <!-- Dynamically add Total Amount Required-->
+                                    <input type="hidden" name="currency_code" value=""> <!-- Update to your currency -->
+                                    <input id="invoice" type="hidden" value="" name="invoice"> <!-- Add Unique invoice for each transaction -->
+                                    <input type="hidden" name="notify_url" value="www.yourwebsite.com/ipn.php"> <!-- Please add IPN URL You can use this service to automate back-office and administrative functions, including fulfilling orders, tracking customers, and providing status and other information related to transactions. -->
+                                    <input type='hidden' name='cancel_return' value='' /> <!-- Take customers to this URL when they cancel their checkout -->
+                                    <input type='hidden' name='return' value='' /> <!-- Take customers to this URL when they finish their checkout  -->
+                                    <!-- Display the payment button. -->
+                                    <input type="image" name="submit" id="Pay_Button" src="https://www.paypalobjects.com/en_US/i/btn/btn_buynow_LG.gif" alt="PayPal - The safer, easier way to pay online">
+                                </form>
+                            </div>
+							</div>
+				 			</div>
+			 			</div>
+		 			</div> 
+		 		</div>
+	 		</div>
+		</section>
+	</main>
+</body>
+<script src="cart_check.js">
+    complete = 0;
+    tax = 0;
+    fork = 0;
+</script>
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
